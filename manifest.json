@@ -1,0 +1,35 @@
+
+{
+    "manifest_version": 2,
+    "name": "Clipboard copy",
+    "version": "1.0",
+    "description": "Adds the contents of the clipboard as a p field to the end of the body tag.",
+    "permissions": [
+      "clipboardRead",
+      "activeTab",
+      "storage"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icons/clipboard.png",
+        "128": "icon.png"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  

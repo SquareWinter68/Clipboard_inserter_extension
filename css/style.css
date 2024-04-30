@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    background-color: rgb(49, 49, 49);
+}
+
+.text_container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px white;
+
+}
+
+.text-line{
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.text-line p{
+    text-align: center;
+}

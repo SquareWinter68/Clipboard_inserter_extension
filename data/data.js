@@ -1,0 +1,3 @@
+data = {
+    interval: 300,
+}
